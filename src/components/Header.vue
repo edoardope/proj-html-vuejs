@@ -1,10 +1,12 @@
 <script>
 import NavBar from './NavBar.vue';
+import Carousel from './Carousel.vue';
 
 export default {
   name: "Header",
   components: {
-    NavBar
+    NavBar,
+    Carousel
   },
   data() {
     return {
@@ -19,6 +21,7 @@ export default {
 
 <template>
   <NavBar />
+  <Carousel />
 </template>
 
 <style lang="scss" scoped></style>

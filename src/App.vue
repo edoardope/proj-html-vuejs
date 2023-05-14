@@ -26,6 +26,7 @@ export default {
 
 <style lang="scss">
 @use 'style/main.scss' as *;
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
 
 * {
   margin: 0;

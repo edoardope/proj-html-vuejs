@@ -5,10 +5,13 @@ export default {
     data() {
         return {
             store,
+            activeItem: 0
         }
     },
     methods: {
-
+        indexLog(i) {
+            this.activeItem = i
+        }
     }
 }
 </script>
@@ -21,9 +24,10 @@ export default {
             </div>
             <div class="col-6">
                 <ul class="d-flex justify-content-between">
-                    <li v-for="(element, index) in store.NavOptions" :key="index"><a class="" :href="element.url"><strong>{{
-                        element.name
-                    }}</strong></a></li>
+                    <li v-for="(element, index) in store.NavOptions" :key="index"><a @click.prevent="indexLog(index)"
+                            :class="(index == activeItem ? 'active' : '')" :href="element.url"><strong>{{
+                                element.name
+                            }}</strong></a></li>
                     <li><button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                             aria-controls="offcanvasRight"><img src="../assets/svg/svg-1.svg" alt=""></button>
 
@@ -47,23 +51,31 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-#logoDetails {
-    height: 25px;
-}
+section {
+    height: 70px;
 
-ul {
-    li {
-        display: inline;
+    #logoDetails {
+        height: 25px;
+    }
 
+    ul {
+        li {
+            display: inline;
 
-        a {
-            text-decoration: none;
-            color: black;
-            display: inline-block;
-            height: 70%;
-
-            &:hover {
+            .active {
                 border-bottom: 7px solid orange;
+            }
+
+
+            a {
+                text-decoration: none;
+                color: black;
+                display: inline-block;
+                height: 70%;
+
+                &:hover {
+                    border-bottom: 7px solid orange;
+                }
             }
         }
     }
