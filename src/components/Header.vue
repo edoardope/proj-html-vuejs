@@ -1,6 +1,11 @@
 <script>
+import NavBar from './NavBar.vue';
+
 export default {
-  name: "HelloWorld",
+  name: "Header",
+  components: {
+    NavBar
+  },
   data() {
     return {
 
@@ -12,6 +17,8 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+  <NavBar />
+</template>
 
 <style lang="scss" scoped></style>

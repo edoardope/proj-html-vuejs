@@ -1,11 +1,11 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import { store } from './store.js';
+import Header from './components/Header.vue';
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    Header,
   },
   data() {
     return {
@@ -21,9 +21,16 @@ export default {
 </script>
 
 <template>
-  <HelloWorld />
+  <Header />
 </template>
 
 <style lang="scss">
 @use 'style/main.scss' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: 0;
+}
 </style>
