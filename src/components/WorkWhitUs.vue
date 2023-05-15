@@ -44,8 +44,8 @@ section {
         position: relative;
         transform: rotate(160deg);
         width: 40%;
-        bottom: 232px;
-        right: 299px;
+        bottom: 95%;
+        right: 28%;
     }
 
     #b {

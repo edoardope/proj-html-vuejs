@@ -3,8 +3,9 @@ import { store } from './store.js';
 import Header from './components/Header.vue';
 import Portfolio from './components/Portfolio.vue';
 import WorkingProcess from './components/WorkingProcess.vue';
-import WorkWhitUs from './components/WorkWhitUs.vue'
-import BlogArticles from './components/BlogArticles.vue'
+import WorkWhitUs from './components/WorkWhitUs.vue';
+import BlogArticles from './components/BlogArticles.vue';
+import Footer from './components/Footer.vue'
 
 export default {
   name: "App",
@@ -13,7 +14,8 @@ export default {
     Portfolio,
     WorkingProcess,
     WorkWhitUs,
-    BlogArticles
+    BlogArticles,
+    Footer
   },
   data() {
     return {
@@ -35,6 +37,7 @@ export default {
     <WorkingProcess />
     <WorkWhitUs />
     <BlogArticles />
+    <Footer />
     <a id="up" href="/home"><i class="fa-solid fa-arrow-up"></i></a>
   </section>
 </template>
