@@ -1,11 +1,19 @@
 <script>
 import { store } from './store.js';
 import Header from './components/Header.vue';
+import Portfolio from './components/Portfolio.vue';
+import WorkingProcess from './components/WorkingProcess.vue';
+import WorkWhitUs from './components/WorkWhitUs.vue'
+import BlogArticles from './components/BlogArticles.vue'
 
 export default {
   name: "App",
   components: {
     Header,
+    Portfolio,
+    WorkingProcess,
+    WorkWhitUs,
+    BlogArticles
   },
   data() {
     return {
@@ -21,7 +29,14 @@ export default {
 </script>
 
 <template>
-  <Header />
+  <section>
+    <Header />
+    <Portfolio />
+    <WorkingProcess />
+    <WorkWhitUs />
+    <BlogArticles />
+    <a id="up" href="/home"><i class="fa-solid fa-arrow-up"></i></a>
+  </section>
 </template>
 
 <style lang="scss">
@@ -33,5 +48,23 @@ export default {
   padding: 0;
   text-decoration: none;
   border: 0;
+}
+
+section {
+  overflow: hidden;
+  width: 100vw;
+}
+
+#up {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  background: lightgreen;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

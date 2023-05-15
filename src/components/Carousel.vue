@@ -67,7 +67,7 @@ export default {
                 <div id="carousel-content" :class="activeItem == 1 ? '' : 'd-none'" class="row justify-content-center">
                     <div class="col-5 pt-2 ps-5">
                         <span class="display-2">devotion that never</span>
-                        <span class="display-2 ms-3"><strong><em>item 2</em></strong></span>
+                        <span class="display-2 ms-3"><strong><em>1</em></strong></span>
                         <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque reiciendis pariatur
                             vel in
                             accusantium dignissimos
@@ -84,7 +84,7 @@ export default {
                 <div id="carousel-content" :class="activeItem == 2 ? '' : 'd-none'" class="row justify-content-center">
                     <div class="col-5 pt-2 ps-5">
                         <span class="display-2">devotion that never</span>
-                        <span class="display-2 ms-3"><strong><em>item 3</em></strong></span>
+                        <span class="display-2 ms-3"><strong><em>3</em></strong></span>
                         <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque reiciendis pariatur
                             vel in
                             accusantium dignissimos
@@ -106,9 +106,9 @@ export default {
         </div>
         <div class="row justify-content-center">
             <div class="col-1 d-flex justify-content-center align-items-center">
-                <span :class="activeItem == 0 ? 'dot-active' : ''" class="dot"></span>
-                <span :class="activeItem == 1 ? 'dot-active' : ''" class="dot"></span>
-                <span :class="activeItem == 2 ? 'dot-active' : ''" class="dot"></span>
+                <span @click="activeItem = 0" :class="activeItem == 0 ? 'dot-active' : ''" class="dot"></span>
+                <span @click="activeItem = 1" :class="activeItem == 1 ? 'dot-active' : ''" class="dot"></span>
+                <span @click="activeItem = 2" :class="activeItem == 2 ? 'dot-active' : ''" class="dot"></span>
             </div>
         </div>
 
