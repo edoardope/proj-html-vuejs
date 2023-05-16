@@ -36,7 +36,7 @@ export default {
 
     #date {
         position: relative;
-        background-color: green;
+        background-color: #c0e1cf;
         padding: 5px 10px;
         left: 15px;
         z-index: 9999;

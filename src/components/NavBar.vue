@@ -63,7 +63,7 @@ section {
             display: inline;
 
             .active {
-                border-bottom: 7px solid orange;
+                border-bottom: 7px solid #F8D12D;
             }
 
 
@@ -74,7 +74,7 @@ section {
                 height: 70%;
 
                 &:hover {
-                    border-bottom: 7px solid orange;
+                    border-bottom: 7px solid #F8D12D;
                 }
             }
         }

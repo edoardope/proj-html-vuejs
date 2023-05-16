@@ -40,6 +40,6 @@ export default {
 
 <style lang="scss" scoped>
 section {
-    background-color: green;
+    background-color: #c0e1cf;
 }
 </style>

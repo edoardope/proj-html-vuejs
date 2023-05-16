@@ -19,14 +19,13 @@ export default {
 </script>
 
 <template>
-  <section>
+  <section class="container-fluid">
     <BlogPost v-for="(element, index) in store.BlogPosts" :key="index" :postDetails="element" />
   </section>
 </template>
 
 <style lang="scss" scoped>
 section {
-  height: 600px;
   padding: 10% 15%;
   display: flex;
   justify-content: space-between;

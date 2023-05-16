@@ -37,19 +37,19 @@ export default {
         <div id="main-c2" class="row">
             <div class="col-3 d-flex justify-content-center flex-column mt-4 text-center">
                 <span><strong>First theres an idea</strong></span>
-                <span class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+                <span class="mt-2 text-grey">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
             </div>
             <div class="col-3 d-flex justify-content-center flex-column mt-4 text-center">
                 <span><strong>Then we talk about</strong></span>
-                <span class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+                <span class="mt-2 text-grey">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
             </div>
             <div class="col-3 d-flex justify-content-center flex-column mt-4 text-center">
                 <span><strong>And we think about</strong></span>
-                <span class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+                <span class="mt-2 text-grey">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
             </div>
             <div class="col-3 d-flex justify-content-center flex-column mt-4 text-center">
                 <span><strong>So we draw along</strong></span>
-                <span class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+                <span class="mt-2 text-grey">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
             </div>
         </div>
 
@@ -63,6 +63,10 @@ section {
     position: relative;
     z-index: 99999;
     background-color: white;
+
+    .text-grey {
+        color: #A6A6A6;
+    }
 
     #main-c-t {
         height: 10%;
@@ -84,7 +88,7 @@ section {
 
         .icon-cont {
             display: flex;
-            background-color: lightgray;
+            background-color: #fbf9f9;
             width: 65%;
             height: 100%;
             border-radius: 50%;

@@ -51,7 +51,8 @@ export default {
                     <div class="col-5 pt-2 ps-5">
                         <span class="display-2">devotion that never</span>
                         <span class="display-2 ms-3"><strong><em>ends</em></strong></span>
-                        <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque reiciendis pariatur
+                        <p class="mt-4 text-grey">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+                            reiciendis pariatur
                             vel in
                             accusantium dignissimos
                         </p>
@@ -68,7 +69,8 @@ export default {
                     <div class="col-5 pt-2 ps-5">
                         <span class="display-2">devotion that never</span>
                         <span class="display-2 ms-3"><strong><em>1</em></strong></span>
-                        <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque reiciendis pariatur
+                        <p class="mt-4 text-grey">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+                            reiciendis pariatur
                             vel in
                             accusantium dignissimos
                         </p>
@@ -85,7 +87,8 @@ export default {
                     <div class="col-5 pt-2 ps-5">
                         <span class="display-2">devotion that never</span>
                         <span class="display-2 ms-3"><strong><em>3</em></strong></span>
-                        <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque reiciendis pariatur
+                        <p class="mt-4 text-grey">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+                            reiciendis pariatur
                             vel in
                             accusantium dignissimos
                         </p>
@@ -120,13 +123,17 @@ export default {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: orange;
+    background-color: #F8D12D;
     margin: 5px;
 }
 
 .dot-active {
     width: 15px;
     height: 15px;
+}
+
+.text-grey {
+    color: #A6A6A6;
 }
 
 #carousel-cont {
@@ -139,7 +146,7 @@ export default {
 
     #read-btn {
         padding: 10px 25px;
-        border: 2px solid orange;
+        border: 2px solid #F8D12D;
     }
 
     #carousel-content {
@@ -147,7 +154,7 @@ export default {
     }
 
     .carousel-btn {
-        background-color: orange;
+        background-color: #F8D12D;
         border-radius: 50%;
         padding-left: 15px;
         padding-right: 15px;

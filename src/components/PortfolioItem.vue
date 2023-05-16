@@ -5,7 +5,7 @@ export default {
     props: ['imgUrl'],
     data() {
         return {
-
+            hover: false
         }
     },
     methods: {
@@ -17,7 +17,11 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div @mouseenter="hover = true" @mouseleave="hover = false">
+        <div id="tag" :class="hover == true ? '' : 'd-none'">
+            <span class="d-block"><strong>Illustration of a novels</strong></span>
+            <span><em>Illustration</em></span>
+        </div>
         <img :src="getImagePath(`../assets/${imgUrl.image}`)" alt="">
     </div>
 </template>
@@ -25,6 +29,15 @@ export default {
 <style lang="scss" scoped>
 div {
     flex-basis: calc(100% / 3);
+    position: relative;
+
+    #tag {
+        display: inline-block;
+        background-color: white;
+        position: absolute;
+        top: 200px;
+        padding: 20px 30px;
+    }
 
     img {
         width: 100%;
