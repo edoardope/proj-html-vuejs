@@ -33,7 +33,7 @@ export default {
 <style lang="scss" scoped>
 section {
     background-color: #00000026;
-    padding: 80px 200px;
+    padding: 150px 200px;
 
     .text-grey {
         color: #A6A6A6;

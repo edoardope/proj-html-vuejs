@@ -18,8 +18,10 @@ export default {
 
 <template>
     <div id="cont">
-        <span id="date" class="h5"><strong><em>{{ postDetails.giorno }}</em></strong></span>
-        <span id="date2">{{ postDetails.mese }}{{ postDetails.anno }}</span>
+        <div id="date-cont">
+            <span id="date" class="h5"><strong><em>{{ postDetails.giorno }}</em></strong></span>
+            <span id="date2">{{ postDetails.mese }}{{ postDetails.anno }}</span>
+        </div>
         <img :src="getImagePath(`../assets/${postDetails.img}`)" alt="">
         <div id="text-box">
             <span class="h6 mt-4">{{ postDetails.text }}</span>
@@ -34,26 +36,31 @@ export default {
     flex-basis: calc(90% / 3);
     padding: 0;
 
-    #date {
+    #date-cont {
+        display: flex;
         position: relative;
-        background-color: #c0e1cf;
-        padding: 5px 10px;
         left: 15px;
         z-index: 9999;
-        bottom: 6px;
+        top: 45px;
+        flex-direction: column;
+        justify-content: center;
+        width: 15%;
+
+    }
+
+    #date {
+        background-color: #c0e1cf;
+        padding: 20% 10%;
+        text-align: center;
+        margin: 0;
+        font-size: 1.5vw;
     }
 
     #date2 {
-        display: inline-block;
-        position: relative;
         background-color: pink;
-        width: 43px;
-        height: 35px;
-        left: -28px;
-        z-index: 1;
-        bottom: -25px;
-        padding: 10px 5px 0px 5px;
-        font-size: 60%;
+        padding: 40% 1%;
+        font-size: 0.8vw;
+        text-align: center;
     }
 
     img {
